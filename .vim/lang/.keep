@@ -1,0 +1,2 @@
+part of $HOME/vimfiles
+:h runtimepath

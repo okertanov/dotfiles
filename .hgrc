@@ -1,0 +1,18 @@
+[ui]
+username = okertanov <okertanov@gmail.com>
+editor = gvim
+verbose = true
+
+[extensions]
+hgsubversion = C:\tools\hgsvn\hgsubversion\hgsubversion
+rebase =
+
+[web]
+encoding = UTF-8
+name = "HG Repository"
+description = "okertanov's local mercurial repository"
+port = 9000
+allow_read = *
+allow_push = oleg, okertanov
+push_ssl = false
+style = spartan

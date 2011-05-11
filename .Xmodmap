@@ -1,0 +1,17 @@
+! My Apple Aluminum keyboard config
+
+! Configure F13 as Insert key
+! F14 as PrintScr
+! F15 as ScrollLock
+! F16 as Pause/Break
+
+keycode 94  = grave asciitilde Cyrillic_io Cyrillic_IO
+keycode 191 = Insert
+keycode 192 = Print Sys_Req Print Sys_Req Print Sys_Req
+keycode 193 = Scroll_Lock NoSymbol Scroll_Lock NoSymbol Scroll_Lock
+keycode 194 = Pause Break Pause Break Pause Break
+
+! Swap Left Cmd and Left Alt
+!keycode 133 = Alt_L
+!keycode 64  = Multi_key
+
