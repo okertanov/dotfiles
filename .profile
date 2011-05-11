@@ -12,7 +12,7 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+    . "$HOME/.bashrc"
     fi
 fi
 
@@ -23,16 +23,8 @@ fi
 
 # MacPorts
 if [ -d "/opt/local/bin" ] ; then
-# MacPorts Installer addition on 2009-04-17_at_22:26:30: adding an
-# appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-# MacPorts Installer addition on 2009-04-17_at_22:26:30: adding an
-# appropriate MANPATH variable for use with MacPorts.
 export MANPATH=/opt/local/share/man:$MANPATH
-# Finished adapting your MANPATH environment variable for use with
-# MacPorts.
 fi
 
 export EDITOR=vim
