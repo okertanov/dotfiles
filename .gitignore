@@ -57,7 +57,6 @@ Dropbox
 .plt-scheme
 .gnome
 .cairo-clockrc
-.icons
 .hplip
 .update-manager-core
 .pamusb
@@ -103,7 +102,6 @@ Dropbox
 .dropbox-dist
 .cvspass
 .lesshst
-.face
 .mission-control
 .compiz
 .conkyrc
