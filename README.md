@@ -37,8 +37,9 @@ Post Install on some platforms
 
 My dotfiled hosts
 -----------------
-* ☑ ok-dev
-* ☑ crater
-* ☑ netra
-* ☐ taurus
+* ☑  ok-dev
+* ☑  crater
+* ☑  netra
+* ☐  taurus
+* ☐  proton
 
