@@ -20,6 +20,7 @@ Install on the clean system
     git fetch
     git fetch origin master
     git checkout master
+    git remote update
     git pull
     git status
 
