@@ -1,7 +1,7 @@
 okertanov's dotfiles
 ====================
 
-![.face](https://github.com/okertanov/dotfiles/raw/master/.face "My .face :)")
+![.face](https://github.com/okertanov/dotfiles/raw/master/.face "My .face file")
 
 How to create your own dotfiles repo
 ------------------------------------
