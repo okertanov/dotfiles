@@ -33,3 +33,10 @@ Post Install on some platforms
 ### Unix
     nothing
 
+My dotfiled hosts
+-----------------
+* ☑ ok-dev
+* ☑ crater
+* ☑ netra
+* ☐ taurus
+

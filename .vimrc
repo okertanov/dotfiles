@@ -211,7 +211,7 @@ if has("gui")
         set guifont=Menlo:h16
         colorscheme molokai
     elseif has('unix')
-        set guifont=DejaVu\ Sans\ Mono\ 11
+        set guifont=Terminus\ 14
     endif
 else
     " terminal
