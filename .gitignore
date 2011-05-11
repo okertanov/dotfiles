@@ -36,6 +36,7 @@ Ubuntu One
 Templates
 Pictures
 Dropbox
+.beyondcompare
 .windows-label
 .ICEauthority
 .mysqlgui
@@ -117,7 +118,6 @@ Dropbox
 .ecryptfs
 .wapi
 .bluefish
-.screenrc
 .nautilus
 .gvfs
 .quantz

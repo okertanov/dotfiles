@@ -1,0 +1,22 @@
+startup_message off
+term xterm
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= dK}%-Lw%{= dW}%50>%n%f* %t%{= dK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+
+#caption always "%{kB}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{kB}%?%+Lw%?"
+#hardstatus alwayslastline "%{BW}%16=%l %{BW}%50=%d/%m/%Y %{BW}%80=%c%="
+
+screen -t 'remote'  7 ssh okertanov@crater
+screen -t 'service' 6 top
+screen -t 'logs'    5 tail -f /var/log/messages
+screen -t 'docs'    4  
+screen -t 'third'   3 mc
+screen -t 'second'  2
+screen -t 'first'   1
+screen -t 'main'    0
+
