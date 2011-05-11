@@ -39,6 +39,7 @@ My dotfiled hosts
 -----------------
 * ☑  ok-dev
 * ☑  crater
+* ☐  dorado
 * ☑  netra
 * ☐  taurus
 * ☐  proton
