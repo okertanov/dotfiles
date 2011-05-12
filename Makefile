@@ -5,8 +5,10 @@ OS:=$(shell uname -o)
 
 ifeq ($(OS), Msys)
 PLATFORM=windows
+PLATFORM_UPDATE_CMD=@cmd /C 'git pull && git status'
 else
 PLATFORM=unix
+PLATFORM_UPDATE_CMD=@(git pull && git status)
 endif
 
 all: backup $(PLATFORM) homebin rcfiles vim emacs
@@ -24,11 +26,14 @@ windows:
 
 unix:
 
+update:
+	$(PLATFORM_UPDATE_CMD)
+
 backup:
 
 clean:
 
 .SILENT: clean
 
-.PTHONY: all windows unix backup homebin rcfiles vim emacs clean
+.PTHONY: all windows unix backup homebin rcfiles vim emacs update clean
 
