@@ -42,3 +42,6 @@ export DEBEMAIL="okertanov@gmail.com"
 export EC2_PRIVATE_KEY=$HOME/projects/amazon-aws/pk-UHWBOOFY3QIS4AGN5J63WYZIHTFLPYK6.pem
 export EC2_CERT=$HOME/projects/amazon-aws/cert-UHWBOOFY3QIS4AGN5J63WYZIHTFLPYK6.pem
 
+alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+alias ll='ls -Gl'
+
