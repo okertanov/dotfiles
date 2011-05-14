@@ -42,5 +42,5 @@ My dotfiled hosts
 * ☐  dorado
 * ☑  netra
 * ☐  taurus
-* ☐  proton
+* ☑  proton
 
