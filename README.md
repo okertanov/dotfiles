@@ -14,8 +14,8 @@ How to create your own dotfiles repo
     git remote add origin git@github.com:user/dotfiles
     git push -u origin master
 
-Install on the clean system
----------------------------
+Install on the clean system (in-place)
+--------------------------------------
     cd ~
     git init
     git remote add origin git@github.com:okertanov/dotfiles
@@ -25,6 +25,15 @@ Install on the clean system
     git remote update
     git pull
     git status
+
+Install on the clean system (aside)
+-----------------------------------
+    cd ~
+    git clone git@github.com:okertanov/dotfiles.git ditfiles
+    ln -s dotfiles/.vimrc .vimrc
+    ln -s dotfiles/.vim .vim
+    ln -s dotfiles/.profile .profile
+    ln -s dotfiles/.gitconfig .gitconfig
 
 Post Install on some platforms
 ------------------------------
