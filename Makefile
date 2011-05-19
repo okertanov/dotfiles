@@ -11,15 +11,13 @@ PLATFORM=unix
 PLATFORM_UPDATE_CMD=@(git pull && git status)
 endif
 
-all: backup $(PLATFORM) homebin rcfiles vim emacs
+all: backup $(PLATFORM) homebin rcfiles vim
 
 homebin: bin
 
 rcfiles: .gitattributes .gitconfig .gitignore .hgrc .hushlogin .inputrc .profile .Xmodmap
 
 vim: .vim .vimrc
-
-emacs: .emacs.d
 
 windows:
 	@cmd /C 'mklink /J vimfiles .vim'
@@ -35,5 +33,5 @@ clean:
 
 .SILENT: clean
 
-.PTHONY: all windows unix backup homebin rcfiles vim emacs update clean
+.PTHONY: all windows unix backup homebin rcfiles vim update clean
 
