@@ -30,10 +30,14 @@ Install on the clean system (aside)
 -----------------------------------
     cd ~
     git clone git@github.com:okertanov/dotfiles.git ditfiles
+
+    ln -s dotfiles/.gitconfig .gitconfig
     ln -s dotfiles/.vimrc .vimrc
     ln -s dotfiles/.vim .vim
     ln -s dotfiles/.profile .profile
-    ln -s dotfiles/.gitconfig .gitconfig
+    ln -s dotfiles/.oh-my-zsh .oh-my-zsh
+    ln -s dotfiles/.zshrc .zshrc
+    ln -s dotfiles/.zprofile .zprofile
 
 Post Install on some platforms
 ------------------------------
