@@ -147,6 +147,8 @@ Mail
 public_html
 mbox
 sent
+.zcompdump
+.zsh_history
 # -- MacOSX Taurus --
 Movies
 Library
