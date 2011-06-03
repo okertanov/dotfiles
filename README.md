@@ -39,6 +39,9 @@ Install on the clean system (aside)
     ln -s dotfiles/.zshrc .zshrc
     ln -s dotfiles/.zprofile .zprofile
 
+    ln -s dotfiles/.hgrc .hgrc
+    ln -s dotfiles/.hushlogin .hushlogin
+
 Post Install on some platforms
 ------------------------------
 ### Windows
