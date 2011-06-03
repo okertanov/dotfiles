@@ -17,6 +17,7 @@ vimfiles
 _viminfo
 .viminfo
 vimfiles/.netrwhist
+.vim/.netrwhist
 .thumbnails
 .kdiff3rc
 .ssh
