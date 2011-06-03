@@ -34,6 +34,7 @@ Install on the clean system (aside)
     ln -s dotfiles/.gitconfig .gitconfig
     ln -s dotfiles/.vimrc .vimrc
     ln -s dotfiles/.vim .vim
+    ln -s dotfiles/.screenrc .screenrc
     ln -s dotfiles/.profile .profile
     ln -s dotfiles/.oh-my-zsh .oh-my-zsh
     ln -s dotfiles/.zshrc .zshrc
