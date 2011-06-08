@@ -20,9 +20,9 @@ rcfiles: .gitattributes .gitconfig .gitignore .hgrc .hushlogin .inputrc .profile
 vim: .vim .vimrc
 
 windows:
-	@cmd /C 'mklink /H ../.gitconfig dotfiles/.gitconfig'
-	@cmd /C 'mklink /H ../.vimrc dotfiles/.vimrc'
-	@cmd /C 'mklink /J ../vimfiles dotfiles/.vim'
+	-@cmd /C 'mklink /H  ..\.gitconfig  .gitconfig'
+	-@cmd /C 'mklink /H  ..\.vimrc      .vimrc'
+	-@cmd /C 'mklink /J  ..\vimfiles    .vim'
 
 unix:
 
