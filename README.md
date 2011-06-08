@@ -33,6 +33,7 @@ Install on the clean system (aside)
     cd dotfiles
     git submodule init
     git submodule update
+    git submodule foreach "git pull origin master"
     cd ~
 
     ln -s dotfiles/.gitconfig .gitconfig
