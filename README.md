@@ -30,6 +30,10 @@ Install on the clean system (aside)
 -----------------------------------
     cd ~
     git clone git@github.com:okertanov/dotfiles.git ditfiles
+    cd dotfiles
+    git submodule init
+    git submodule update
+    cd ~
 
     ln -s dotfiles/.gitconfig .gitconfig
     ln -s dotfiles/.vimrc .vimrc
