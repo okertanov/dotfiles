@@ -48,6 +48,11 @@ Install on the clean system (aside)
     ln -s dotfiles/.hgrc .hgrc
     ln -s dotfiles/.hushlogin .hushlogin
 
+    ln -s dotfiles/.icons .icons
+    ln -s dotfiles/.face .face
+    ln -s dotfiles/bin bin
+    ln -s dotfiles/.inputrc .inputrc
+
 Post Install on some platforms
 ------------------------------
 ### Windows
@@ -61,8 +66,8 @@ My dotfiled hosts
 -----------------
 * ☑  ok-dev
 * ☑  crater
-* ☐  dorado
-* ☑  netra
+* ☑  dorado
+* ☑  vega
 * ☐  taurus
 * ☑  proton
 
