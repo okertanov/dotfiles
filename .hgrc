@@ -1,11 +1,13 @@
 [ui]
 username = okertanov <okertanov@gmail.com>
-editor = gvim
+editor = vim
 verbose = true
 
 [extensions]
 hgsubversion = C:\tools\hgsvn\hgsubversion\hgsubversion
 rebase =
+hgext.graphlog =
+
 
 [web]
 encoding = UTF-8
