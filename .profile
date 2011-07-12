@@ -21,14 +21,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# MacPorts
-if [ -d "/opt/local/bin" ] ; then
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/share/man:$MANPATH
-fi
-
-export EDITOR=vim
-
 # Goog depot tools
 if [ -d "$HOME/projects/google/depot_tools" ] ; then
     PATH=$PATH:$HOME/projects/google/depot_tools
@@ -41,6 +33,8 @@ export DEBEMAIL="okertanov@gmail.com"
 
 export EC2_PRIVATE_KEY=$HOME/projects/amazon-aws/pk-UHWBOOFY3QIS4AGN5J63WYZIHTFLPYK6.pem
 export EC2_CERT=$HOME/projects/amazon-aws/cert-UHWBOOFY3QIS4AGN5J63WYZIHTFLPYK6.pem
+
+export EDITOR=vim
 
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias ll='ls -Gl'
