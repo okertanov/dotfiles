@@ -1,16 +1,18 @@
 [user]
-	name = okertanov
-	email = okertanov@gmail.com
+    name = okertanov
+    email = okertanov@gmail.com
 [github]
-	user = okertanov
-	token = 03ad2db03dbaafb1e7ed6edab845a7fb
+    user = okertanov
+    token = 03ad2db03dbaafb1e7ed6edab845a7fb
 [core]
     autocrlf = input
+    whitespace = -trailing-space,-space-before-tab
     pager =
 [color]
     interactive = auto
 [svn]
     #authorsfile = .gitauthors
 [alias]
-	glog = log --graph --abbrev-commit
-	olog = log --pretty=oneline
+    glog = log --graph --abbrev-commit
+    olog = log --pretty=oneline
+
