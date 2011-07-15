@@ -10,6 +10,9 @@ rem *  Copyright (c) 2011 A&H Software House, Inc. All Rights Reserved.       *
 rem *                                                                         *
 rem *  The batch-file to obtain issue's summary using JIRA commandline client *
 rem *                                                                         *
+rem *  Version:                                                               *
+rem *          1.0                                                            *
+rem *                                                                         *
 rem *  Usage:                                                                 *
 rem *          j-b.cmd issue_id                                               *
 rem *                                                                         *
@@ -19,6 +22,13 @@ rem *                                                                         *
 rem *  Notes:                                                                 *
 rem *          1. "jira-cli-2.0.0\jira.bat" should be somewhere in %PATH%     *
 rem *          2. "jira-token" and "jira-user" files are used for caching     *
+rem *                                                                         *
+rem *  TODO:                                                                  *
+rem *          - configure JSERVER with "jira-server" file                    *
+rem *          - use stdin to get ISSUE_ID when provided                      *
+rem *          - fix for /F for the empty "jira-token" file                   *
+rem *          - process "session timed out" error to renew "jira-token"      *
+rem *          - set %errorlevel% at exit                                     *
 rem *                                                                         *
 rem ***************************************************************************
 
