@@ -4,7 +4,6 @@ editor = vim
 verbose = true
 
 [extensions]
-hgsubversion = C:\tools\hgsvn\hgsubversion\hgsubversion
 rebase =
 hgext.graphlog =
 
