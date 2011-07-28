@@ -395,5 +395,16 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" python
+python << EOF
+import vim
+
+def BufferName():
+    buffer = vim.current.buffer #returns the current buffer
+    print buffer.name
+
+EOF
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " EOF
 """"""""""""""""""""""""""""""""""""""""""""""""""
