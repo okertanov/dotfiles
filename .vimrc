@@ -13,6 +13,14 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
+" pathogen
+" https://github.com/tpope/vim-pathogen
+" http://vim-scripts.org/
+call pathogen#infect()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Setup
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -61,12 +69,6 @@ syntax on
 filetype on
 filetype indent on
 filetype plugin on
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" pathogen (http://www.vim.org/scripts/script.php?script_id=2332)
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
