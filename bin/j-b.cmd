@@ -15,6 +15,8 @@ rem *          1.0                                                            *
 rem *                                                                         *
 rem *  Usage:                                                                 *
 rem *          j-b.cmd issue_id                                               *
+rem *              or                                                         *
+rem *          j-b.cmd clean                                                  *
 rem *                                                                         *
 rem *  Example:                                                               *
 rem *          j-b.cmd BUG-2211                                               *
