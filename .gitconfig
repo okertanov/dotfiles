@@ -8,7 +8,7 @@
 	autocrlf = input
 	whitespace = -trailing-space,-space-before-tab
 	pager = 
-	editor = gvim
+	editor = vim
 [color]
 	interactive = auto
 [svn]
