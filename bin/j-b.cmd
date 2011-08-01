@@ -76,6 +76,7 @@ rem ***************************************************************************
 :done
     set RC=%1
     if [%RC%]==[] set RC=0
+    set ERRORLEVEL=%RC%
     exit %RC%
 rem :done
 
