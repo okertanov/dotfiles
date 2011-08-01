@@ -51,6 +51,12 @@ if [%ISSUE_ID%]==[] (
     call :LOG Error: Issue ID is not defined. & call :done 1
 )
 
+if "%ISSUE_ID%"=="clean" (
+    call :LOG Cleaning token cache.
+    call :cleant
+    call :done 0
+)
+
 call :user
 call :token
 
@@ -140,10 +146,19 @@ rem ***************************************************************************
     call :LOG %ISSUE_ID% using auth: %JUSER%/%JTOKEN% and %JCONNECTION%
     call jira %JCONNECTION% --action login > %JTOKENFILE%
     if %errorlevel% NEQ 0 (
-        del %JTOKENFILE%
+        del /F %JTOKENFILE%
     )
     exit /b 0
 rem :login
+
+rem ***************************************************************************
+rem ***************************** cleant **************************************
+rem ***************************************************************************
+:cleant
+    del /F %JUSERFILE%
+    del /F %JTOKENFILE%
+    exit /b 0
+rem :cleant
 
 rem ***************************************************************************
 rem ******************************* LOG ***************************************
