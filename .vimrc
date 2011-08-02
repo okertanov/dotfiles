@@ -13,12 +13,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
-" pathogen
-" https://github.com/tpope/vim-pathogen
-" http://vim-scripts.org/
-call pathogen#infect()
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Setup
@@ -70,6 +64,12 @@ filetype on
 filetype indent on
 filetype plugin on
 """""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" pathogen
+" https://github.com/tpope/vim-pathogen
+" http://vim-scripts.org/
+call pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader key
