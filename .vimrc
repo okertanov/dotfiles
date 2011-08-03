@@ -25,8 +25,6 @@ set smarttab
 set et
 set wrap
 set hidden
-set list
-set listchars=tab:··
 set ai
 set cin
 set si
@@ -228,8 +226,12 @@ map <F12> <ESC>:set guifont=*<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" UI tweaks: Toolbar & Menubar hide/show
+" UI tweaks: list characters, toolbar & menubar hide/show
 if has("gui")
+    set listchars=tab:Â»Â·
+    set listchars+=trail:Â·
+    set list
+
     set guioptions-=T "get rid of toolbar
     :let g:toggleTool = 0
     map <silent> <S-F1> :if g:toggleTool == 1<CR>:set guioptions-=T<CR>
@@ -400,6 +402,7 @@ endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " python
+if has("python")
 python << EOF
 import vim
 
@@ -408,6 +411,7 @@ def BufferName():
     print buffer.name
 
 EOF
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " EOF

@@ -1,14 +1,15 @@
 ##    Copyright (C) 2011 Oleg Kertanov <okertanov@gmail.com>
 ##    All rights reserved.
 
-OS:=$(shell uname -o)
+OS:=$(shell uname -s)
 
 ifeq ($(OS), Msys)
 PLATFORM=windows
 PLATFORM_UPDATE_CMD=@cmd /C 'git pull && git status'
 else
 PLATFORM=unix
-PLATFORM_UPDATE_CMD=@(git pull && git status)
+PLATFORM_UPDATE_CMD=@(git pull && git submodule init && git submodule update && \
+					git submodule foreach "git pull origin master" && git status)
 endif
 
 all: backup $(PLATFORM) homebin rcfiles vim
