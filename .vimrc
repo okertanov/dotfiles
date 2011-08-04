@@ -228,9 +228,8 @@ map <F12> <ESC>:set guifont=*<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " UI tweaks: list characters, toolbar & menubar hide/show
 if has("gui")
-    set listchars=tab:»·
-    set listchars+=trail:·
-    set list
+    " set listchars=tab:··
+    " set list
 
     set guioptions-=T "get rid of toolbar
     :let g:toggleTool = 0

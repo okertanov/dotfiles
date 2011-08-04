@@ -23,6 +23,7 @@ vim: .vim .vimrc
 windows:
 	-@cmd /C 'mklink /H  ..\.gitconfig  .gitconfig'
 	-@cmd /C 'mklink /H  ..\.vimrc      .vimrc'
+	-@cmd /C 'mklink /H  ..\.hgrc       .hgrc'
 	-@cmd /C 'mklink /J  ..\vimfiles    .vim'
 
 unix:
