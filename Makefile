@@ -10,7 +10,7 @@ PLATFORM_UPDATE_CMD=@cmd /C 'git pull && git submodule foreach git pull && git s
 else
 PLATFORM=unix
 PLATFORM_SUBINIT_CMD=@(git submodule init && git submodule update && git status)
-PLATFORM_UPDATE_CMD=@(git pull && git submodule foreach "git pull" && git status)
+PLATFORM_UPDATE_CMD=@(git pull && git submodule foreach "git checkout master && git pull" && git status)
 endif
 
 all: backup $(PLATFORM) homebin rcfiles vim
