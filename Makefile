@@ -5,11 +5,12 @@ OS:=$(shell uname -s | sed -e 's|_.*||g')
 
 ifeq ($(OS), MINGW32)
 PLATFORM=windows
-PLATFORM_UPDATE_CMD=@cmd /C 'git pull && git submodule init && git submodule update && git submodule foreach git pull origin master && git status'
+PLATFORM_SUBINIT_CMD=@cmd /C 'git submodule init && git submodule update && git status'
+PLATFORM_UPDATE_CMD=@cmd /C 'git pull && git submodule foreach git pull && git status'
 else
 PLATFORM=unix
-PLATFORM_UPDATE_CMD=@(git pull && git submodule init && git submodule update && \
-						git submodule foreach "git pull origin master" && git status)
+PLATFORM_SUBINIT_CMD=@(git submodule init && git submodule update && git status)
+PLATFORM_UPDATE_CMD=@(git pull && git submodule foreach "git pull" && git status)
 endif
 
 all: backup $(PLATFORM) homebin rcfiles vim
@@ -28,6 +29,9 @@ windows:
 
 unix:
 
+init:
+		$(PLATFORM_SUBINIT_CMD)
+
 update:
 	$(PLATFORM_UPDATE_CMD)
 
@@ -37,5 +41,5 @@ clean:
 
 .SILENT: clean
 
-.PTHONY: all windows unix backup homebin rcfiles vim update clean
+.PTHONY: all windows unix backup homebin rcfiles vim init update clean
 
