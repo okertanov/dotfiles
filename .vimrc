@@ -336,6 +336,7 @@ match WhitespaceEOL /\s\+$/
 " Right border line
 if (v:version >=703)
     set colorcolumn=100
+    hi ColorColumn ctermbg=red ctermfg=white guibg=#592929
 endif
 
 " Match < > with the % command
