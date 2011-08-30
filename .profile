@@ -36,6 +36,9 @@ export EC2_CERT=$HOME/projects/amazon-aws/cert-UHWBOOFY3QIS4AGN5J63WYZIHTFLPYK6.
 
 export EDITOR=vim
 
+# OSX Stuff
+export ARCHFLAGS="-arch x86_64"
+
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias ll='ls -Gl'
 
