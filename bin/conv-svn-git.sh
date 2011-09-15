@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/bin/sh
+
+#    Copyright (C) 2011 Oleg Kertanov <okertanov@gmail.com>
+#    All rights reserved.
 
 svn_repos=""
 
