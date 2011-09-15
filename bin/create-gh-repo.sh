@@ -1,21 +1,22 @@
-#!/bin/sh
+#!/bin/bash
 
 ##   Copyright (C) 2011 Oleg Kertanov <okertanov@gmail.com>
 ##   All rights reserved.
 
 # http://develop.github.com/
 
-if [$# -eq 3] ; then
+USAGE="Usage: \n\t$0 user password project-name"
+
+if [ $# -eq 3 ] ; then
     USER=$1
     PASS=$2
     PROJ=$3
-    USAGE=$0 user password project-name
-    CMD=curl -X POST https://$USER:$PASS@github.com/api/v2/json/repos/create -F \'$PROJ\'
+    CMD="curl -X POST https://$USER:$PASS@github.com/api/v2/json/repos/create -F 'name=$PROJ'"
 
     echo "Creating $PROJ with $CMD"
-    $CMD
+    eval $CMD
 else
-    echo $USAGE
+    echo -e $USAGE
     exit 1
 fi
 
