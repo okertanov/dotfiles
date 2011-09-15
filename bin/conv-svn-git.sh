@@ -1,11 +1,10 @@
 #!/bin/bash
 
-svn_repos="bonima espectrale.com habrahabr honda-mafia nntp-reader picasa-twitpic \
-            replica.espectrale.com rss-notify twilats"
+svn_repos=""
 
 for i in $svn_repos
 do
-sudo git svn clone svn+ssh://okertanov@crater.espectrale.com/var/svn/repo/trunk/$i
+sudo git svn clone svn+ssh://okertanov@e.com/var/svn/repo/trunk/$i
 sudo git clone --bare --shared file://$i $i.git
 sudo rm -rf $i
 
