@@ -15,7 +15,8 @@
 	#authorsfile = .gitauthors
 [alias]
 	glog = log --graph --abbrev-commit
-	olog = log --pretty=oneline
+    olog = log --pretty=oneline
+    clog = log --pretty=oneline --abbrev-commit --graph --decorate
 [merge]
 	tool = kdiff3
 [diff]
