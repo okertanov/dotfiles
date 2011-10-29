@@ -256,7 +256,7 @@ if has("gui")
     if has("win32")
         au GUIEnter * call libcallnr('maximize', 'Maximize', 1)
     elseif has("gui_gtk2")
-        au GUIEnter * :set lines=99999 columns=99999
+        " au GUIEnter * :set lines=99999 columns=99999
     elseif has('macunix')
         set fuoptions=maxvert,maxhorz
     endif
