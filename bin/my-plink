@@ -1,0 +1,3 @@
+#!/bin/sh
+#plink -batch -v -i "c:\okertanov\.ssh\id_dsa-crater-private.ppk" $1 $2
+ssh -i "/c/okertanov/.ssh/id_dsa-crater" "$@"
