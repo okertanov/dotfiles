@@ -1,3 +1,2 @@
 Emacs configuration
 ===================
-

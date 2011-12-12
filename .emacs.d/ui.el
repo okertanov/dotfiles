@@ -30,9 +30,8 @@
 
 (setq whitespace-line-column 100)
 
-;; Custom Emacs 24 color themes support
-(add-to-list 'custom-theme-load-path (concat base-dir "themes/"))
-(load-theme 'zenburn t)
+;;(load-theme 'zenburn t)
+(load-theme 'solarized-light t)
 
 ;; Fonts
 (when (eq system-type 'windows-nt)
