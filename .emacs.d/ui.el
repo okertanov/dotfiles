@@ -36,7 +36,8 @@
 
 ;; Fonts
 (when (eq system-type 'windows-nt)
-  (set-face-attribute 'default nil :font "Courier New-13"))
+    (if window-system
+        (set-face-attribute 'default nil :font "Courier New-13")))
 
 ;; Module
 (provide 'ui)
