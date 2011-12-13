@@ -24,7 +24,7 @@
 (setq desktop-save t)
 (blink-cursor-mode -1)
 
-
+;; No bell
 (setq visible-bell t)
 (setq ring-bell-function 'ignore)
 
@@ -38,11 +38,17 @@
 (load-theme 'solarized-light t)
 
 (set-face-background 'region "pink") ; Set region background color
-;;(set-background-color        "wheat3") ; Set emacs bg color
+;;(set-background-color        "lightgrey") ; Set emacs bg color
 
-;; Fonts
+;; OSX font and cursor
+(when (eq system-type 'darwin)
+    (when (window-system)
+        (set-cursor-color "darkgrey")
+        (set-face-attribute 'default nil :font "Melno-16")))
+
+;; Windows font
 (when (eq system-type 'windows-nt)
-    (if window-system
+    (when (window-system)
         (set-face-attribute 'default nil :font "Courier New-13")))
 
 ;; Module
