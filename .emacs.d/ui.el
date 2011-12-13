@@ -3,7 +3,7 @@
 ;; Window
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(unless (eq system-type 'darwin) (menu-bar-mode -1))
+;;(unless (eq system-type 'darwin) (menu-bar-mode -1))
 
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-screen t)
@@ -32,6 +32,9 @@
 
 ;;(load-theme 'zenburn t)
 (load-theme 'solarized-light t)
+
+(set-face-background 'region "pink") ; Set region background color
+;;(set-background-color        "wheat3") ; Set emacs bg color
 
 ;; Fonts
 (when (eq system-type 'windows-nt)

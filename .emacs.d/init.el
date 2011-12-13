@@ -26,3 +26,5 @@
 (require 'ui)
 (require 'editor)
 (require 'orgmode)
+(require 'development)
+

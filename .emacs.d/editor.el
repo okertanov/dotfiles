@@ -23,6 +23,11 @@
 (setq default-tab-width 4)
 (setq-default tab-width 4)
 
+;; Search and Replace
+(setq search-highlight           t)
+(setq query-replace-highlight    t)
+(setq mouse-sel-retain-highlight t)
+
 ;; No tabs
 (setq-default indent-tabs-mode nil)
 
@@ -68,13 +73,12 @@
 (show-paren-mode t)
 (setq show-paren-style 'parenthesis)
 
-;; highlight the current line
 ;; highlight the current line; set a custom face, so we can
 ;; recognize from the normal marking (selection)
 ;; (defface hl-line '((t (:background "yellow")))
 ;;   "Face to use for `hl-line-face'." :group 'hl-line)
 ;; (setq hl-line-face 'hl-line)
-;; (global-hl-line-mode +1) ; turn it on for all modes by default
+(global-hl-line-mode +1) ; turn it on for all modes by default
 
 ;; Uncomment this to disable the Insert key, which I find annoying
 (global-set-key [insert] (lambda () (interactive)))
@@ -101,6 +105,13 @@
 ; when fullscreen patch is present
 (when (eq system-type 'darwin)
     (global-set-key (kbd "M-RET") 'ns-toggle-fullscreen))
+
+;; Make certain that Home and End do the right thing
+(global-set-key [home] 'beginning-of-line)
+(global-set-key [end] 'end-of-line)
+
+;; Prompt for a line and go to it when hitting C-x g
+(global-set-key "\C-xg" 'goto-line)
 
 ;; Module
 (provide 'editor)
