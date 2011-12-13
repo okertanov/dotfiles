@@ -1,7 +1,8 @@
 ;; editor.el - main emacs editor configuration
 
 ;; User configuration
-
+(setq user-name-long "Oleg Kertanov")
+(setq user-name-nick "okertanov")
 (setq user-mail-address "okertanov@gmail.com")
 
 ;; Darwin
