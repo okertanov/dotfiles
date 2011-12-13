@@ -22,6 +22,7 @@
 (add-to-list 'load-path solarized-themes-dir)
 
 ;; Core configuration
+(require 'packages)
 (require 'ui)
 (require 'editor)
-(require 'packages)
+(require 'orgmode)

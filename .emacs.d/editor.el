@@ -69,7 +69,12 @@
 (setq show-paren-style 'parenthesis)
 
 ;; highlight the current line
-(global-hl-line-mode +1)
+;; highlight the current line; set a custom face, so we can
+;; recognize from the normal marking (selection)
+;; (defface hl-line '((t (:background "yellow")))
+;;   "Face to use for `hl-line-face'." :group 'hl-line)
+;; (setq hl-line-face 'hl-line)
+;; (global-hl-line-mode +1) ; turn it on for all modes by default
 
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
