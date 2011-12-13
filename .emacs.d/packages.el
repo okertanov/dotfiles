@@ -6,9 +6,9 @@
 (package-initialize)
 
 ;; For the Clojure
-(require 'clojure-mode)
-(defun turn-on-paredit () (paredit-mode 1))
-(add-hook 'clojure-mode-hook 'turn-on-paredit)
+;; (require 'clojure-mode)
+;; (defun turn-on-paredit () (paredit-mode 1))
+;; (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
 ;; No version control please
 (setq vc-handled-backends ())
