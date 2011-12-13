@@ -13,5 +13,9 @@
 (setq org-agenda-files
     (list "~/DropBox/Sync/orgmode/life.org"))
 
+(add-hook 'org-mode-hook
+    (lambda ()
+        (show-all)))
+
 ;; Module
 (provide 'orgmode)
