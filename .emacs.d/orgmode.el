@@ -15,7 +15,7 @@
 
 (add-hook 'org-mode-hook
     (lambda ()
-        (show-all)))
+        "file-based visibility settings are used instead of (show-all)"))
 
 ;; Module
 (provide 'orgmode)
