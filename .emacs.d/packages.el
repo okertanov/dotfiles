@@ -5,10 +5,16 @@
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-;; For the Clojure
+;; Clojure
 ;; (require 'clojure-mode)
 ;; (defun turn-on-paredit () (paredit-mode 1))
 ;; (add-hook 'clojure-mode-hook 'turn-on-paredit)
+
+;; Markdown
+(autoload 'markdown-mode "markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+   (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
 ;; No version control please
 (setq vc-handled-backends ())

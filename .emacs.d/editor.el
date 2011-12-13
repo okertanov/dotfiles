@@ -76,6 +76,10 @@
 ;; (setq hl-line-face 'hl-line)
 ;; (global-hl-line-mode +1) ; turn it on for all modes by default
 
+;; Uncomment this to disable the Insert key, which I find annoying
+(global-set-key [insert] (lambda () (interactive)))
+(global-set-key [insertchar] (lambda () (interactive)))
+
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
