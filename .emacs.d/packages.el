@@ -1,3 +1,6 @@
+;;
+;; Copyright (c) 2011 Oleg Kertanov <okertanov@gmail.com>
+;;
 ;; packages.el - ux configuration
 ;;
 ;; M-x eval-buffer

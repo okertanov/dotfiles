@@ -1,3 +1,6 @@
+;;
+;; Copyright (c) 2011 Oleg Kertanov <okertanov@gmail.com>
+;;
 ;; org.el - my org-mode
 ;; see http://orgmode.org/
 

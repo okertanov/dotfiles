@@ -1,3 +1,6 @@
+;;
+;; Copyright (c) 2011 Oleg Kertanov <okertanov@gmail.com>
+;;
 ;; init.el - configuration entry point
 ;; Based on https://github.com/mathieulegrand/Emacs-configuration/blob/master/init.el
 (message "%s" "Emacs!")

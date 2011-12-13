@@ -1,3 +1,6 @@
+;;
+;; Copyright (c) 2011 Oleg Kertanov <okertanov@gmail.com>
+;;
 ;; ui.el - ux configuration
 
 ;; Window
