@@ -40,7 +40,7 @@
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
   '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
 
-;; create the autosave dir if necessary, since emacs won't.
+;; Create the autosave dir if necessary, since emacs won't.
 (make-directory "~/.emacs.d/autosaves/" t)
 
 ; Native-Windows Keybindings
@@ -64,20 +64,23 @@
 (auto-compression-mode t)
 (setq message-log-max 100)
 
-;; smart indenting and pairing for all
+;; Smart indenting and pairing for all
 (electric-pair-mode t)
 (electric-indent-mode t)
 (electric-layout-mode t)
 
-;; use shift + arrow keys to switch between visible buffers
+;; Use shift + arrow keys to switch between visible buffers
 (require 'windmove)
 (windmove-default-keybindings 'super)
 
-;; show-paren-mode: subtle highlighting of matching parens
+;; Show-paren-mode: subtle highlighting of matching parens
 (show-paren-mode t)
 (setq show-paren-style 'parenthesis)
 
-;; highlight the current line; set a custom face, so we can
+;; When the mark is active, the region is highlighted.
+(setq transient-mark-mode t)
+
+;; Highlight the current line; set a custom face, so we can
 ;; recognize from the normal marking (selection)
 ;; (defface hl-line '((t (:background "yellow")))
 ;;   "Face to use for `hl-line-face'." :group 'hl-line)
@@ -92,7 +95,7 @@
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
 
-; readline compatibility
+; Readline compatibility
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
 ; Fn-Delete is delete
@@ -106,7 +109,7 @@
     (setq mac-right-control-modifier 'meta)
     (setq mac-option-modifier 'nil))
 
-; when fullscreen patch is present
+; When fullscreen patch is present
 (when (eq system-type 'darwin)
     (global-set-key (kbd "M-RET") 'ns-toggle-fullscreen))
 

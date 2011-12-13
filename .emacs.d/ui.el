@@ -15,7 +15,7 @@
 
 (setq initial-scratch-message nil)
 
-;; mode line settings
+;; Mode line settings
 (setq-default indicate-empty-lines 'nil)
 (setq global-font-lock-mode t)
 (setq line-number-mode t)
@@ -33,6 +33,7 @@
 
 (setq whitespace-line-column 100)
 
+;; Theme
 ;;(load-theme 'zenburn t)
 (load-theme 'solarized-light t)
 
