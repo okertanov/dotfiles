@@ -3,7 +3,7 @@
 ;;
 ;; development.el - emacs is a programmer's editor too
 
-;; Grand Unified Debugger (allows you to do M-x gdb)
+;; Grand Unified Debugger (allows to do M-x gdb)
 (require 'gud)
 
 ;; Templates and snippets - common functions
