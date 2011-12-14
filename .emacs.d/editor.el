@@ -17,7 +17,8 @@
 (set-default-coding-systems 'utf-8)
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
-(setq default-buffer-file-coding-system 'utf-8)
+(set-default default-buffer-file-coding-system 'utf-8-unix)
+(set-buffer-file-coding-system default-buffer-file-coding-system)
 (set-language-environment "UTF-8")
 (ansi-color-for-comint-mode-on)
 
