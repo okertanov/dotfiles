@@ -16,12 +16,17 @@
 
 ;; Babel
 (org-babel-do-load-languages
- 'org-babel-load-languages
-  '( (perl . t)
-     (ruby . t)
-     (sh . t)
-     (python . t)
-     (emacs-lisp . t)))
+  'org-babel-load-languages
+  '((sh . t)
+    (dot . t)
+    (latex . t)
+    (perl . t)
+    (python . t)
+    (js . t)
+    (lisp . t)
+    (clojure . t)
+    (scheme . t)
+    (emacs-lisp . t)))
 
 (setq org-confirm-babel-evaluate nil)
 
