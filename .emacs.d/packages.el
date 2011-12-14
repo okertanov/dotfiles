@@ -36,6 +36,9 @@
 
 (global-rainbow-delimiters-mode)
 
+;; Tramp
+(setq tramp-default-method "ssh")
+
 ;; No version control please
 (setq vc-handled-backends ())
 
