@@ -27,6 +27,15 @@
 (setq auto-mode-alist
    (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
+;; Rainbow delimiters
+(when (require 'rainbow-delimiters nil 'noerror)
+  (add-hook 'scheme-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'lisp-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
+
+(global-rainbow-delimiters-mode)
+
 ;; No version control please
 (setq vc-handled-backends ())
 
