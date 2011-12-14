@@ -38,7 +38,9 @@
 (load-theme 'solarized-light t)
 
 (set-face-background 'region "pink") ; Set region background color
-;;(set-background-color        "lightgrey") ; Set emacs bg color
+;;(set-face-foreground 'default "blue")
+;;(set-face-background 'default "green")
+;;(set-background-color "lightgrey")
 
 ;; OSX font and cursor
 (when (eq system-type 'darwin)

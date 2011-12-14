@@ -10,9 +10,22 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
+;; Agenda files
 (setq org-agenda-files
     (list "~/DropBox/Sync/orgmode/life.org"))
 
+;; Babel
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+  '( (perl . t)
+     (ruby . t)
+     (sh . t)
+     (python . t)
+     (emacs-lisp . t)))
+
+(setq org-confirm-babel-evaluate nil)
+
+;; org-mode hook
 (add-hook 'org-mode-hook
     (lambda ()
         "file-based visibility settings are used instead of (show-all)"))
