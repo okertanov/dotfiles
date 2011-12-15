@@ -38,6 +38,8 @@
     (lambda()(my-lisp-mode-hook emacs-lisp-mode-map)))
 (add-hook 'scheme-mode-hook
     (lambda()(my-lisp-mode-hook scheme-mode-map)))
+(add-hook 'clojure-mode-hook
+    (lambda()(my-lisp-mode-hook clojure-mode-map)))
 
 ;; Module
 (provide 'development)
