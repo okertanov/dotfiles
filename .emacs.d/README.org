@@ -1,0 +1,23 @@
+My Emacs configuration
+======================
+
+Manifest
+--------
+* README.md
+* init.el
+* development.el
+* editor.el
+* orgmode.el
+* packages.el
+* ui.el
+* themes
+
+Links
+-----
+[Russian EmacsWiki](http://www.emacswiki.org/cgi-bin/emacs-ru)
+[alexott.net emacs](http://alexott.net/ru/emacs/)
+[Emacs Muse](http://hatred.homelinux.net/wiki/zhurnal/2011-03-05_16.46_emacs_muse)
+[ErgoEmacs Features](http://ergoemacs.org/features.html)
+[Introduction to Emacs by Andy Harris](http://www.cs.iupui.edu/~aharris/emchap/EmacsGuide.html)
+[General Introductions to Org-mode video tutorials](http://orgmode.org/worg/org-tutorials/index.html)
+[Org: Your Life in Plain Text](http://orgmode.org/)
