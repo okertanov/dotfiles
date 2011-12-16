@@ -31,12 +31,24 @@
 ;; Enable y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Whitespaces column
 (setq whitespace-line-column 100)
 
-;; Theme
+;; Custom Emacs 24 color themes support
+(defvar themes-dir (concat base-dir "themes/")
+  "Custom themes")
+(defvar solarized-themes-dir (concat themes-dir "emacs-color-theme-solarized/")
+  "Custom themes")
+
+(add-to-list 'custom-theme-load-path themes-dir)
+(add-to-list 'custom-theme-load-path solarized-themes-dir)
+(add-to-list 'load-path solarized-themes-dir)
+
+;; Apply theme
 ;;(load-theme 'zenburn t)
 (load-theme 'solarized-light t)
 
+;; Cistomize appearance
 (set-face-background 'region "pink") ; Set region background color
 ;;(set-face-foreground 'default "blue")
 ;;(set-face-background 'default "green")

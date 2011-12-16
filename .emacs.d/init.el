@@ -18,15 +18,8 @@
   (push "~/bin" exec-path)
   (push "~/.lein/bin" exec-path)
 
-;; Custom Emacs 24 color themes support
-(defvar themes-dir (concat base-dir "themes/")
-  "Custom themes")
-(defvar solarized-themes-dir (concat themes-dir "emacs-color-theme-solarized/")
-  "Custom themes")
-
-(add-to-list 'custom-theme-load-path themes-dir)
-(add-to-list 'custom-theme-load-path solarized-themes-dir)
-(add-to-list 'load-path solarized-themes-dir)
+;; Timestamps appear in English
+(setq system-time-locale "C")
 
 ;; Core configuration
 (require 'packages)
