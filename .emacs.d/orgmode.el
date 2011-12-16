@@ -30,6 +30,8 @@
 
 (setq org-confirm-babel-evaluate nil)
 
+(setq org-support-shift-select t)
+
 ;; org-mode hook
 (add-hook 'org-mode-hook
     (lambda ()

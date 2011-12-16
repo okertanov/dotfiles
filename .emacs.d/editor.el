@@ -26,13 +26,14 @@
 (cua-mode 1)
 (setq cua-keep-region-after-copy t)
 
-(setq default-tab-width 4)
-(setq-default tab-width 4)
-
 ;; Search and Replace
 (setq search-highlight           t)
 (setq query-replace-highlight    t)
 (setq mouse-sel-retain-highlight t)
+
+;; Tabstops
+(setq default-tab-width 4)
+(setq-default tab-width 4)
 
 ;; No tabs
 (setq-default indent-tabs-mode nil)
@@ -75,10 +76,6 @@
 (electric-indent-mode t)
 (electric-layout-mode t)
 
-;; Use shift + arrow keys to switch between visible buffers
-(require 'windmove)
-(windmove-default-keybindings 'super)
-
 ;; Show-paren-mode: subtle highlighting of matching parens
 (show-paren-mode t)
 (setq show-paren-style 'parenthesis)
@@ -93,7 +90,13 @@
 ;; (setq hl-line-face 'hl-line)
 (global-hl-line-mode +1) ; turn it on for all modes by default
 
-;; Uncomment this to disable the Insert key, which I find annoying
+;; Keybindings
+
+;; Use shift + arrow keys to switch between visible buffers
+(require 'windmove)
+(windmove-default-keybindings 'super)
+
+;; Uncomment this to disable the Insert key
 (global-set-key [insert] (lambda () (interactive)))
 (global-set-key [insertchar] (lambda () (interactive)))
 
@@ -130,6 +133,11 @@
 ;; Autocomplete
 (global-set-key (kbd "M-/") 'hippie-expand)
 (global-set-key (kbd "S-SPC") 'dabbrev-expand)
+
+;; More CUA
+(require 'redo+)
+(global-set-key (kbd "C-z") 'undo)
+(global-set-key (kbd "C-S-z") 'redo)
 
 ;; Module
 (provide 'editor)
