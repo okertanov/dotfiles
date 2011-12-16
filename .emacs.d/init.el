@@ -14,6 +14,10 @@
 (add-to-list 'load-path base-dir)
 (add-to-list 'load-path base-vendor-dir)
 
+;; System directories
+  (push "~/bin" exec-path)
+  (push "~/.lein/bin" exec-path)
+
 ;; Custom Emacs 24 color themes support
 (defvar themes-dir (concat base-dir "themes/")
   "Custom themes")

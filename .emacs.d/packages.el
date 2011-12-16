@@ -17,7 +17,7 @@
 ;; Clojure
 ;; https://github.com/technomancy/clojure-mode
 (require 'clojure-mode)
-(defun turn-on-paredit () (paredit-mode 1))
+(defun turn-on-paredit () (paredit-mode 0))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
 ;; Markdown
