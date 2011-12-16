@@ -4,15 +4,16 @@
 ;; ui.el - ux configuration
 
 ;; Window
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-;;(unless (eq system-type 'darwin) (menu-bar-mode -1))
+(when window-system
+  (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+  (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+  (unless (eq system-type 'darwin) (menu-bar-mode -1)))
 
+;; Suppress messages
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-screen t)
 (setq inhibit-startup-message t)
 (setq inhibit-startup-echo-area-message t)
-
 (setq initial-scratch-message nil)
 
 ;; Mode line settings
@@ -31,8 +32,11 @@
 ;; Enable y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; Whitespaces column
+;; Whitespaces
+(setq whitespace-style
+      '(trailing lines space-before-tab indentation space-after-tab))
 (setq whitespace-line-column 100)
+(whitespace-mode)
 
 ;; Custom Emacs 24 color themes support
 (defvar themes-dir (concat base-dir "themes/")
