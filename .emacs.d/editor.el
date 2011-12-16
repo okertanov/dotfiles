@@ -37,6 +37,10 @@
 ;; No tabs
 (setq-default indent-tabs-mode nil)
 
+;; Save current desktop
+(require 'desktop)
+(desktop-save-mode 1)
+
 ;; Backups
 (custom-set-variables
   '(auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/\\1" t)))
