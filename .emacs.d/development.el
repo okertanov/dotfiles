@@ -6,6 +6,11 @@
 ;; Grand Unified Debugger (allows to do M-x gdb)
 (require 'gud)
 
+;; Pretty lambda characters
+(require 'pretty-lambdada)
+(pretty-lambda-for-modes)
+
+
 ;; Templates and snippets - common functions
 (defun copyright-comment (csym)
   "Inserts copyright comment"

@@ -20,3 +20,4 @@
 [[http://www.cs.iupui.edu/~aharris/emchap/EmacsGuide.html][Introduction to Emacs by Andy Harris]]
 [[http://orgmode.org/][Org: Your Life in Plain Text]]
 [[http://orgmode.org/worg/org-tutorials/index.html][General Introductions to Org-mode video tutorials]]
+[[http://zahardzhan.github.com/2010/emacs-starter-kit-the-program.html][Программа Emacs Starter Kit]]
