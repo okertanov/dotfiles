@@ -126,5 +126,9 @@
 ;; Prompt for a line and go to it when hitting C-x g
 (global-set-key "\C-xg" 'goto-line)
 
+;; Autocomplete
+(global-set-key (kbd "M-/") 'hippie-expand)
+(global-set-key (kbd "S-SPC") 'dabbrev-expand)
+
 ;; Module
 (provide 'editor)
