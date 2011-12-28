@@ -17,6 +17,7 @@
 [[http://alexott.net/ru/emacs/][alexott.net emacs]]
 [[http://hatred.homelinux.net/wiki/zhurnal/2011-03-05_16.46_emacs_muse][Emacs Muse]]
 [[http://ergoemacs.org/features.html][ErgoEmacs Features]]
+[[http://code.google.com/p/ergoemacs/wiki/DeveloperIntro][ErgoEmacs DeveloperIntro]]
 [[http://www.cs.iupui.edu/~aharris/emchap/EmacsGuide.html][Introduction to Emacs by Andy Harris]]
 [[http://orgmode.org/][Org: Your Life in Plain Text]]
 [[http://orgmode.org/worg/org-tutorials/index.html][General Introductions to Org-mode video tutorials]]
