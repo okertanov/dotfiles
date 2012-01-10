@@ -163,3 +163,5 @@ Sites
 .crash_report_checksum
 .eclipse
 .DS_Store
+
+.emacs.desktop.lock
