@@ -164,4 +164,6 @@ Sites
 .eclipse
 .DS_Store
 
+# Other
 .emacs.desktop.lock
+
