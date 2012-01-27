@@ -13,6 +13,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
+" pathogen
+" https://github.com/tpope/vim-pathogen
+" http://vim-scripts.org/
+" call pathogen#infect()
+call pathogen#runtime_append_all_bundles()
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Setup
@@ -62,12 +68,6 @@ filetype on
 filetype indent on
 filetype plugin on
 """""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" pathogen
-" https://github.com/tpope/vim-pathogen
-" http://vim-scripts.org/
-call pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Leader key
@@ -399,6 +399,11 @@ function! SwitchHeaderAndCode()
   endif
 endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" clojure
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " python
