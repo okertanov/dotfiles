@@ -283,6 +283,13 @@ let g:html_use_css = "1"
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" Turn off 'Show list characters'
+if has("gui")
+    nnoremap <S-F4> :set nolist<CR>
+endif
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle Spell-Checking.
 if has("spell")
     set spell spelllang=en_us
