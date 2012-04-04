@@ -3,6 +3,7 @@
 ;;
 ;; init.el - configuration entry point
 ;; Based on https://github.com/mathieulegrand/Emacs-configuration/blob/master/init.el
+
 (message "%s" "Emacs!")
 
 ;; Runtime directory
@@ -28,15 +29,10 @@
 ;; Timestamps appear in English
 (setq system-time-locale "C")
 
-;; Server
-;(require 'server)
-;(when (and (eq window-system 'w32) (defun server-ensure-safe-dir (dir) "Noop" t)))
-;(server-start)
-
 ;; Core configuration
 (require 'packages)
-(require 'ui)
 (require 'editor)
-(require 'orgmode)
+(require 'ui)
 (require 'development)
-
+(require 'orgmode)
+(require 'clojure)

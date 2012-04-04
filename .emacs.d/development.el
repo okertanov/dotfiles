@@ -3,13 +3,36 @@
 ;;
 ;; development.el - emacs is a programmer's editor too
 
+;; C-Like mode
+(require 'cc-mode)
+
 ;; Grand Unified Debugger (allows to do M-x gdb)
 (require 'gud)
 
 ;; Pretty lambda characters
-(require 'pretty-lambdada)
-(pretty-lambda-for-modes)
+(when (require 'pretty-lambdada nil 'noerror)
+    (pretty-lambda-for-modes))
 
+;; Rainbow delimiters
+(when (require 'rainbow-delimiters nil 'noerror)
+  (global-rainbow-delimiters-mode)
+  (add-hook 'scheme-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'lisp-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+  (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
+
+;; Tramp
+(setq tramp-default-method "ssh")
+
+;; No version control please
+(setq vc-handled-backends ())
+
+;; Markdown
+;; http://jblevins.org/projects/markdown-mode/
+(autoload 'markdown-mode "markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+   (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
 ;; Templates and snippets - common functions
 (defun copyright-comment (csym)

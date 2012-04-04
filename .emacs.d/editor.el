@@ -132,9 +132,9 @@
 (global-set-key (kbd "S-SPC") 'dabbrev-expand)
 
 ;; More CUA
-(require 'redo+)
-(global-set-key (kbd "C-z") 'undo)
-(global-set-key (kbd "C-S-z") 'redo)
+(when (require 'redo+ nil 'noerror)
+    (global-set-key (kbd "C-z") 'undo)
+    (global-set-key (kbd "C-S-z") 'redo))
 
 ;; Module
 (provide 'editor)
