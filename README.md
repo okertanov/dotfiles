@@ -28,7 +28,6 @@ Install on the clean system
 Post Install on some platforms
 ------------------------------
 ### Windows
-    cd ~
     make
 
 ### Unix
