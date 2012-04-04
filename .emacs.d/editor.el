@@ -8,39 +8,36 @@
 (setq user-name-nick "okertanov")
 (setq user-mail-address "okertanov@gmail.com")
 
-;; Darwin
-(if (eq system-type 'darwin)
-    (push "/usr/local/bin" exec-path))
-
 ;; Encoding
-(prefer-coding-system 'utf-8)
+(set-language-environment "UTF-8")
+(prefer-coding-system       'utf-8)
 (set-default-coding-systems 'utf-8)
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (set-default default-buffer-file-coding-system 'utf-8-unix)
 (set-buffer-file-coding-system default-buffer-file-coding-system)
-(set-language-environment "UTF-8")
 (ansi-color-for-comint-mode-on)
 
 ;; Editor
 (cua-mode 1)
 (setq cua-keep-region-after-copy t)
+(setq w32-use-visible-system-caret t)
 
 ;; Search and Replace
 (setq search-highlight           t)
 (setq query-replace-highlight    t)
 (setq mouse-sel-retain-highlight t)
 
+;; No tab characters
+(setq-default indent-tabs-mode nil)
+
 ;; Tabstops
 (setq default-tab-width 4)
 (setq-default tab-width 4)
 
-;; No tabs
-(setq-default indent-tabs-mode nil)
-
 ;; Save current desktop
-(require 'desktop)
-(desktop-save-mode 1)
+;(require 'desktop)
+;(desktop-save-mode 0)
 
 ;; Backups
 (custom-set-variables
@@ -51,17 +48,17 @@
 (make-directory "~/.emacs.d/autosaves/" t)
 
 ; Native-Windows Keybindings
-   (global-set-key [C-tab] 'other-window)
-   (global-set-key [M-f4] 'save-buffers-kill-emacs)
-   (global-set-key "\C-a" 'mark-whole-buffer)
-   (global-set-key "\C-f" 'isearch-forward)
-   (global-set-key "\C-o" 'find-file)
-   (global-set-key "\C-s" 'save-buffer)
-   (global-set-key "\C-w" 'kill-this-buffer)
-   (global-set-key (kbd "C-S-o") 'open-line)
-   (global-set-key (kbd "C-S-w") 'kill-region)
-   (define-key global-map (kbd "RET") 'newline-and-indent) ; For programming language modes
-   (define-key isearch-mode-map "\C-f" 'isearch-repeat-forward)
+(global-set-key [C-tab] 'other-window)
+(global-set-key [M-f4] 'save-buffers-kill-emacs)
+(global-set-key "\C-a" 'mark-whole-buffer)
+(global-set-key "\C-f" 'isearch-forward)
+(global-set-key "\C-o" 'find-file)
+(global-set-key "\C-s" 'save-buffer)
+(global-set-key "\C-w" 'kill-this-buffer)
+(global-set-key (kbd "C-S-o") 'open-line)
+(global-set-key (kbd "C-S-w") 'kill-region)
+(define-key global-map (kbd "RET") 'newline-and-indent) ; For programming language modes
+(define-key isearch-mode-map "\C-f" 'isearch-repeat-forward)
 
 ;; Other Keybindings
 (cond ((window-system)

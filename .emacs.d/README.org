@@ -11,6 +11,7 @@
 - packages.el
 - ui.el
 - elpa
+- modules
 - themes
 ** Links
 [[http://www.emacswiki.org/cgi-bin/emacs-ru][Russian EmacsWiki]]

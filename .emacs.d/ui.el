@@ -7,7 +7,8 @@
 (when window-system
   (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
   (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-  (unless (eq system-type 'darwin) (menu-bar-mode -1)))
+  ;(unless (eq system-type 'darwin) (menu-bar-mode -1))
+  )
 
 ;; Suppress messages
 (setq inhibit-splash-screen t)
@@ -68,6 +69,10 @@
 (when (eq system-type 'windows-nt)
     (when (window-system)
         (set-face-attribute 'default nil :font "Courier New-13")))
+
+;; Maximized on Windows
+(when (eq system-type 'windows-nt)
+    (w32-send-sys-command 61488))
 
 ;; Module
 (provide 'ui)
