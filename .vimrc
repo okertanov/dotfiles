@@ -100,9 +100,9 @@ imap <C-tab>  <ESC>:sbnext<CR>i
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Encodings
-"set encoding=utf-8
-"set fileencoding=utf-8
-"set termencoding=cp1251
+set encoding=utf-8
+set fileencoding=utf-8
+set termencoding=utf-8
 " Default
 " set encoding=cp1251
 " Autodetect
@@ -204,12 +204,13 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme & Fonts
 "set background=dark
-"set background=light
-"colorscheme solarized
-colorscheme darkblue
+set background=light
+colorscheme solarized
+"colorscheme darkblue
 if has("gui")
     if has("win32")
-        set guifont=Lucida_Console:h11:cRUSSIAN::
+        "set guifont=Lucida_Console:h11:cRUSSIAN::
+        set guifont=Consolas:h13:cRUSSIAN::
     elseif has('macunix')
         set guifont=Menlo:h16
         colorscheme molokai
