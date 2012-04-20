@@ -204,19 +204,19 @@ endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme & Fonts
-"set background=dark
-set background=light
-colorscheme solarized
-"colorscheme darkblue
 if has("gui")
     if has("win32")
         "set guifont=Lucida_Console:h11:cRUSSIAN::
         set guifont=Consolas:h13:cRUSSIAN::
+        set background=light
+        colorscheme solarized
     elseif has('macunix')
         set guifont=Menlo:h16
         colorscheme molokai
     elseif has('unix')
         set guifont=Terminus\ 14
+        set background=dark
+        colorscheme darkblue
     endif
 else
     " terminal
