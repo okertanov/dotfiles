@@ -29,7 +29,6 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 set et
-set wrap
 set hidden
 set ai
 set cin
@@ -47,6 +46,8 @@ set wildmenu
 set lz
 set scrolloff=3
 set backspace=indent,eol,start
+set nowrap
+set formatoptions+=l
 set wrapmargin=5
 "set antialias
 "set t_Co=256
