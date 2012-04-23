@@ -24,3 +24,4 @@
 [[http://orgmode.org/worg/org-tutorials/index.html][General Introductions to Org-mode video tutorials]]
 [[http://zahardzhan.github.com/2010/emacs-starter-kit-the-program.html][Программа Emacs Starter Kit]]
 [[http://emacs.vote-system.com/][Emacs VS]]
+[[http://david.rothlis.net/emacs/howtolearn.html][How to learn Emacs]]
