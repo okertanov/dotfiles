@@ -42,3 +42,5 @@ export ARCHFLAGS="-arch x86_64"
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias ll='ls -Gl'
 alias Emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+alias mc='LANG=C mc'
+
