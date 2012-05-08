@@ -16,7 +16,7 @@
 " pathogen
 " https://github.com/tpope/vim-pathogen
 " http://vim-scripts.org/
-" call pathogen#infect()
+filetype off
 call pathogen#runtime_append_all_bundles()
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -42,15 +42,20 @@ set ignorecase
 set gdefault
 set lsp=0
 set lbr
+set title
 set wildmenu
+set wildignore+=.hg,.git,.svn
+set wildignore+=*.DS_Store
+set wildignore+=*.pyc
+set wcm=<Tab>
 set lz
 set scrolloff=3
 set backspace=indent,eol,start
 set nowrap
 set formatoptions+=l
 set wrapmargin=5
-"set antialias
-"set t_Co=256
+set antialias
+set t_Co=256
 set shortmess=aOstTI
 set shortmess=atI
 set statusline=%F%m%r%h%w\ [FMT=%{&ff}]\ [TYPE=%Y]\ [DEC=\%03.3b]
@@ -65,9 +70,14 @@ set showmode
 set viminfo='10,\"100,:20,%,n~/.viminfo
 set isk+=_,$,@,%,#,-
 syntax on
-filetype on
-filetype indent on
-filetype plugin on
+filetype plugin indent on
+set linespace=1
+set cursorline
+set gdefault
+set gcr=n:blinkon0
+set formatoptions-=o
+nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
+nmap <Space> <PageDown>
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
@@ -112,8 +122,6 @@ set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Encodings menu
-set wildmenu
-set wcm=<Tab>
 menu Encoding.windows-1251 :e ++enc=cp1251<CR>
 menu Encoding.ibm-866      :e ++enc=ibm866<CR>
 menu Encoding.koi8-r       :e ++enc=koi8-r<CR>
@@ -208,6 +216,7 @@ if has("gui")
     if has("win32")
         "set guifont=Lucida_Console:h11:cRUSSIAN::
         set guifont=Consolas:h13:cRUSSIAN::
+        let g:solarized_termcolors=256
         set background=light
         colorscheme solarized
     elseif has('macunix')
