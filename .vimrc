@@ -112,19 +112,19 @@ imap <C-tab>  <ESC>:sbnext<CR>i
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Encodings
 set encoding=utf-8
-set fileencoding=utf-8
-" set termencoding=utf-8
+"set fileencoding=utf-8
+"set termencoding=utf-8
 " Autodetect
 set fencs=utf-8,ucs-2,cp1251,koi8-r,cp866
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Encodings menu
+menu Encoding.utf-8        :e ++enc=utf-8<CR>
+menu Encoding.unicode      :e ++enc=ucs-2<CR>
 menu Encoding.windows-1251 :e ++enc=cp1251<CR>
 menu Encoding.ibm-866      :e ++enc=ibm866<CR>
 menu Encoding.koi8-r       :e ++enc=koi8-r<CR>
-menu Encoding.utf-8        :e ++enc=utf-8<CR>
-menu Encoding.unicode      :e ++enc=ucs-2<CR>
 map <F8> :emenu Encoding.<TAB>
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
