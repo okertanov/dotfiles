@@ -113,11 +113,9 @@ imap <C-tab>  <ESC>:sbnext<CR>i
 " Encodings
 set encoding=utf-8
 set fileencoding=utf-8
-set termencoding=utf-8
-" Default
-" set encoding=cp1251
+" set termencoding=utf-8
 " Autodetect
-set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
+set fencs=utf-8,ucs-2,cp1251,koi8-r,cp866
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
