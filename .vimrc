@@ -73,10 +73,8 @@ syntax on
 filetype plugin indent on
 set linespace=1
 set cursorline
-set gdefault
 set gcr=n:blinkon0
 set formatoptions-=o
-nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 nmap <Space> <PageDown>
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -210,23 +208,25 @@ endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme & Fonts
-if has("gui")
+if has("gui_running")
     if has("win32")
-        "set guifont=Lucida_Console:h11:cRUSSIAN::
         set guifont=Consolas:h13:cRUSSIAN::
+        let g:solarized_termcolors=256
+        set background=light
+        colorscheme solarized
+    elseif has('unix')
+        set guifont=Terminus\ 14
         let g:solarized_termcolors=256
         set background=light
         colorscheme solarized
     elseif has('macunix')
         set guifont=Menlo:h16
         colorscheme molokai
-    elseif has('unix')
-        set guifont=Terminus\ 14
-        set background=dark
-        colorscheme darkblue
     endif
 else
-    " terminal
+    let g:solarized_termcolors=256
+    set background=dark
+    colorscheme solarized
 endif
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
