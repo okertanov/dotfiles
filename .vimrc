@@ -73,10 +73,8 @@ syntax on
 filetype plugin indent on
 set linespace=1
 set cursorline
-set gdefault
 set gcr=n:blinkon0
 set formatoptions-=o
-nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 nmap <Space> <PageDown>
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -112,21 +110,19 @@ imap <C-tab>  <ESC>:sbnext<CR>i
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Encodings
 set encoding=utf-8
-set fileencoding=utf-8
-set termencoding=utf-8
-" Default
-" set encoding=cp1251
+"set fileencoding=utf-8
+"set termencoding=utf-8
 " Autodetect
-set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
+set fencs=utf-8,ucs-2,cp1251,koi8-r,cp866
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 " Encodings menu
+menu Encoding.utf-8        :e ++enc=utf-8<CR>
+menu Encoding.unicode      :e ++enc=ucs-2<CR>
 menu Encoding.windows-1251 :e ++enc=cp1251<CR>
 menu Encoding.ibm-866      :e ++enc=ibm866<CR>
 menu Encoding.koi8-r       :e ++enc=koi8-r<CR>
-menu Encoding.utf-8        :e ++enc=utf-8<CR>
-menu Encoding.unicode      :e ++enc=ucs-2<CR>
 map <F8> :emenu Encoding.<TAB>
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -212,23 +208,22 @@ endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme & Fonts
-if has("gui")
+if has("gui_running")
     if has("win32")
-        "set guifont=Lucida_Console:h11:cRUSSIAN::
         set guifont=Consolas:h13:cRUSSIAN::
+        let g:solarized_termcolors=256
+        set background=light
+        colorscheme solarized
+    elseif has('unix')
+        set guifont=Terminus\ 14
         let g:solarized_termcolors=256
         set background=light
         colorscheme solarized
     elseif has('macunix')
         set guifont=Menlo:h16
         colorscheme molokai
-    elseif has('unix')
-        set guifont=Terminus\ 14
-        set background=dark
-        colorscheme darkblue
     endif
 else
-    " terminal
     let g:solarized_termcolors=256
     set background=dark
     colorscheme solarized
