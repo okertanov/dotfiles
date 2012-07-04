@@ -236,6 +236,11 @@ map <F12> <ESC>:set guifont=*<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" Misc mapping
+map <silent> <F9> :call FA()<CR>
+map <silent> <S-F9> zE
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " UI tweaks: list characters, toolbar & menubar hide/show
 if has("gui")
     set listchars=tab:»·
