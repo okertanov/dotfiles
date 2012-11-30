@@ -164,6 +164,13 @@ autocmd BufLeave,FocusLost silent! wall
 autocmd FileType lua nmap <F5> :!lua "%"<cr>
 autocmd FileType c,cpp,c++ nmap <F5> :make<cr>
 
+" Vim-Pipe plugin & autocmd
+set splitright
+noremap <C-r> :call VimPipe()<CR>
+inoremap <C-r> <ESC>:call VimPipe()<CR>i
+autocmd FileType javascript let b:vimpipe_command="node"
+autocmd FileType scheme let b:vimpipe_command="racket -i"
+
 " View binary files
 autocmd BufReadPost *.pdf silent %!pdftotext -nopgbrk "%" - |fmt -csw78
 autocmd BufReadPost *.doc silent %!antiword "%"
