@@ -166,8 +166,8 @@ autocmd FileType c,cpp,c++ nmap <F5> :make<cr>
 
 " Vim-Pipe plugin & autocmd
 set splitright
-noremap <C-r> :call VimPipe()<CR>
-inoremap <C-r> <ESC>:call VimPipe()<CR>i
+noremap <M-r> :call VimPipe()<CR>
+inoremap <M-r> <ESC>:call VimPipe()<CR>i
 autocmd FileType javascript let b:vimpipe_command="node"
 autocmd FileType scheme let b:vimpipe_command="racket -i"
 
