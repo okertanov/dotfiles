@@ -76,6 +76,7 @@ set cursorline
 set gcr=n:blinkon0
 set formatoptions-=o
 nmap <Space> <PageDown>
+set nofoldenable
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
