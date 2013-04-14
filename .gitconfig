@@ -5,7 +5,8 @@
 	user = okertanov
 	token = 03ad2db03dbaafb1e7ed6edab845a7fb
 [core]
-	autocrlf = input
+	autocrlf = false
+	safecrlf = true
 	whitespace = -trailing-space,-space-before-tab
 	pager = 
 	editor = gvim
