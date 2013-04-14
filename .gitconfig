@@ -29,3 +29,5 @@
 	path = C:/tools/KDiff3/kdiff3.exe
 [mergetool "kdiff3"]
 	path = C:/tools/KDiff3/kdiff3.exe
+[push]
+	default = tracking
