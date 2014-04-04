@@ -44,3 +44,5 @@ alias ll='ls -Gl'
 alias Emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 alias mc='LANG=C mc'
 
+
+export PATH=/usr/local/bin:$PATH
