@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then exit 1; fi
+
+up=`cat ~/.jira-pwd`
+api_link=`cat ~/.jira-api`
+content_type="Content-Type: application/json"
+issue_key=$1
+request=$api_link$issue_key
+
+curl --insecure -s -u $up -H $content_type -X GET $request | \
+         python -c 'import sys, json; j = json.load(sys.stdin); \
+            print ("%s - %s: %s" % (j["key"],  j["fields"]["issuetype"]["name"], j["fields"]["summary"])) \
+            if j.has_key("fields") else "Issue not found."'
+
