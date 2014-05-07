@@ -157,6 +157,7 @@ vnoremap Q gq
 " Syntax tuning
 autocmd BufNewFile,BufRead *.md set filetype=markdown
 au BufNewFile,BufRead *.mowa set filetype=scheme
+au FileType markdown setlocal nofoldenable
 
 " Save all open buffers when focus lost
 autocmd BufLeave,FocusLost silent! wall
