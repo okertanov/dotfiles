@@ -10,6 +10,8 @@
 	whitespace = -trailing-space,-space-before-tab
 	pager =
 	editor = vim
+[push]
+	default = simple
 [color]
 	interactive = auto
 [alias]
