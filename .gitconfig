@@ -1,26 +1,40 @@
 [user]
-	name = okertanov
-	email = okertanov@gmail.com
+    name = okertanov
+    email = okertanov@gmail.com
 [github]
-	user = okertanov
-	token = 03ad2db03dbaafb1e7ed6edab845a7fb
+    user = okertanov
+    token = 03ad2db03dbaafb1e7ed6edab845a7fb
 [core]
-	autocrlf = false
-	safecrlf = true
-	whitespace = -trailing-space,-space-before-tab
-	pager =
-	editor = vim
+    autocrlf = false
+    safecrlf = true
+    whitespace = -trailing-space,-space-before-tab
+    pager =
+    editor = vim
 [push]
-	default = simple
+    default = simple
 [color]
-	interactive = auto
+    interactive = auto
 [alias]
-	glog = log --graph --abbrev-commit
-	olog = log --pretty=oneline
+    glog = log --graph --abbrev-commit
+    olog = log --pretty=oneline
     dlog = log --oneline --decorate
-	clog = log --pretty=oneline --abbrev-commit --graph --decorate
+    clog = log --pretty=oneline --abbrev-commit --graph --decorate
 [push]
-	default = tracking
+    default = tracking
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+[diff]
+    tool = bcomp
+[difftool]
+    bcomp = trustExitCode
+    prompt = false
+[difftool "bcomp"]
+    cmd = bcomp "$LOCAL" "$REMOTE"
+[merge]
+    tool = bcomp
+[mergetool]
+    bcomp = trustExitCode
+    prompt = false
+[mergetool "bcomp"]
+    cmd = bcomp "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
