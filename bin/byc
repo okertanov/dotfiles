@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/Applications/Beyond\ Compare.app/Contents/MacOS/BCompare $1 $2
+

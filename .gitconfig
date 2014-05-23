@@ -8,27 +8,17 @@
 	autocrlf = false
 	safecrlf = true
 	whitespace = -trailing-space,-space-before-tab
-	pager = 
+	pager =
 	editor = vim
 [color]
 	interactive = auto
-[svn]
-	#authorsfile = .gitauthors
 [alias]
 	glog = log --graph --abbrev-commit
 	olog = log --pretty=oneline
+    dlog = log --oneline --decorate
 	clog = log --pretty=oneline --abbrev-commit --graph --decorate
-	l50  = "!f () { git log --abbrev-commit --date=short --pretty=format:'%h%x00%cd%x00%s%x00%an%x00%d' $@ | gawk -F '\\0' '{ printf \"\\033[31m%s\\033[0m \\033[32m%s\\033[0m  %-50s \\033[30;1m%s\\033[0m\\033[33m%s\\n\", $1, $2, gensub(/(.{49}).{2,}/, \"\\\\1…\",\"g\",$3), $4, $5 }' | less -R; }; f"
-	l80  = "!f () { git log --abbrev-commit --date=short --pretty=format:'%h%x00%cd%x00%s%x00%an%x00%d' $@ | gawk -F '\\0' '{ printf \"\\033[31m%s\\033[0m \\033[32m%s\\033[0m  %-80s \\033[30;1m%s\\033[0m\\033[33m%s\\n\", $1, $2, gensub(/(.{79}).{2,}/, \"\\\\1…\",\"g\",$3), $4, $5 }' | less -R; }; f"
-	lg50 = "!f () { git log --graph --color=always --abbrev-commit --date=relative --pretty=format:'%x00%h%x00%s%x00%cd%x00%an%x00%d' $@ | gawk -F '\\0' '{ printf \"%s\\033[31m%s\\033[0m %-50s \\033[32m%14s\\033[0m \\033[30;1m%s\\033[0m\\033[33m%s\\n\", $1, $2, gensub(/(.{49}).{2,}/, \"\\\\1…\",\"g\",$3), $4, $5, $6 }' | less -R; }; f"
-	lg80 = "!f () { git log --graph --color=always --abbrev-commit --date=relative --pretty=format:'%x00%h%x00%s%x00%cd%x00%an%x00%d' $@ | gawk -F '\\0' '{ printf \"%s\\033[31m%s\\033[0m %-80s \\033[32m%14s\\033[0m \\033[30;1m%s\\033[0m\\033[33m%s\\n\", $1, $2, gensub(/(.{79}).{2,}/, \"\\\\1…\",\"g\",$3), $4, $5, $6 }' | less -R; }; f"
-[merge]
-	tool = kdiff3
-[diff]
-	guitool = kdiff3
-[difftool "kdiff3"]
-	path = C:/tools/KDiff3/kdiff3.exe
-[mergetool "kdiff3"]
-	path = C:/tools/KDiff3/kdiff3.exe
 [push]
 	default = tracking
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
