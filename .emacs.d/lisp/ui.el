@@ -51,7 +51,7 @@
 
 ;; Apply theme
 ;;(load-theme 'zenburn t)
-;(load-theme 'solarized-light t)
+(load-theme 'solarized-light t)
 
 ;; Cistomize appearance
 (set-face-background 'region "pink") ; Set region background color
