@@ -39,7 +39,6 @@ set showmatch
 set hlsearch
 set incsearch
 set ignorecase
-set gdefault
 set lsp=0
 set lbr
 set title
