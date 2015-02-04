@@ -13,10 +13,12 @@
   "Emacs packages")
 (defvar base-custom-dir (concat base-dir "modules/")
   "Custom packages")
+(defvar base-lisp-dir (concat base-dir "lisp/")
+  "Lisp subdir")
 
-(add-to-list 'load-path base-dir)
 (add-to-list 'load-path base-vendor-dir)
 (add-to-list 'load-path base-custom-dir)
+(add-to-list 'load-path base-lisp-dir)
 
 ;; System directories
 (push "~/bin" exec-path)

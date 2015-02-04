@@ -51,7 +51,7 @@
 
 ;; Apply theme
 ;;(load-theme 'zenburn t)
-;(load-theme 'solarized-light t)
+(load-theme 'solarized-light t)
 
 ;; Cistomize appearance
 (set-face-background 'region "pink") ; Set region background color
@@ -63,7 +63,7 @@
 (when (eq system-type 'darwin)
     (when (window-system)
         (set-cursor-color "darkgrey")
-        (set-face-attribute 'default nil :font "Melno-16")))
+        (set-face-attribute 'default nil :font "Monaco-14")))
 
 ;; Windows font
 (when (eq system-type 'windows-nt)
