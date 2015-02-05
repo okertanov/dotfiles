@@ -1,0 +1,49 @@
+"*":
+  "exception-reporting":
+    userId: "313571b2-0aa2-df90-eeb5-717acc1d7a40"
+  "release-notes":
+    viewedVersion: "0.76.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "dbab0552883ea90c71114cd88ac0b655ad76a53a"
+  editor:
+    showIndentGuide: true
+    preferredLineLength: 100
+    tabLength: 4
+    'invisibles':
+        cr: "↩"
+        eol: ""
+    fontFamily: "Menlo"
+    fontSize: 14
+    lineHeight: 1.2
+    showInvisibles: true
+    zoomFontWhenCtrlScrolling: true
+  core:
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+    ]
+    projectHome: "/Users/kertanov/projects/_other_"
+    audioBeep: false
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  autosave:
+    enabled: true
+  "spell-check":
+    grammars: [
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+    ]
+  "markdown-preview":
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.plain"
+      "text.plain.null-grammar"
+    ]
