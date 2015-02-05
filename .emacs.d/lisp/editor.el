@@ -23,6 +23,12 @@
 (setq cua-keep-region-after-copy t)
 (setq w32-use-visible-system-caret t)
 
+;; OSX Meta Fix
+(setq mac-option-modifier nil)
+(setq ns-function-modifier 'meta)
+(setq mac-right-option-modifier nil)
+(global-set-key (quote [M-f10]) (quote ns-toggle-fullscreen))
+
 ;; Search and Replace
 (setq search-highlight           t)
 (setq query-replace-highlight    t)
