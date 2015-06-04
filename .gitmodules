@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/vim-pipe"]
 	path = .vim/bundle/vim-pipe
 	url = git://github.com/krisajenkins/vim-pipe.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
