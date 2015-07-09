@@ -21,8 +21,14 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github osx svn)
+#plugins=(git github osx svn)
+plugins=(git github osx)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+function git_prompt_info() {
+}
+
+git_prompt_status() {
+}
