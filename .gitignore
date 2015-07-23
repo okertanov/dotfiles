@@ -167,3 +167,9 @@ Sites
 # Other
 .emacs.desktop.lock
 
+
+# Atom
+.atom/.apm/
+.atom/compile-cache/
+.atom/storage/
+
