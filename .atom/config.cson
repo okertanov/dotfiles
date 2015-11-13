@@ -11,11 +11,10 @@
     showIndentGuide: true
     preferredLineLength: 100
     tabLength: 4
-    'invisibles':
-        cr: "↩"
-        eol: ""
+    invisibles:
+      cr: "↩"
+      eol: ""
     fontFamily: "Menlo"
-    fontSize: 14
     lineHeight: 1.2
     showInvisibles: true
     zoomFontWhenCtrlScrolling: true

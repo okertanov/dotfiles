@@ -27,8 +27,8 @@ plugins=(git github osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-function git_prompt_info() {
-}
+#function git_prompt_info() {
+#}
 
-git_prompt_status() {
-}
+#git_prompt_status() {
+#}

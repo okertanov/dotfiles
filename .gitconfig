@@ -10,6 +10,7 @@
     whitespace = -trailing-space,-space-before-tab
     pager =
     editor = vim
+	ignorecase = false
 [branch]
     autosetuprebase = always
 [push]
