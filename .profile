@@ -44,5 +44,6 @@ alias ll='ls -Gl'
 alias Emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 alias mc='LANG=C mc'
 
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 export PATH=/usr/local/bin:$PATH
