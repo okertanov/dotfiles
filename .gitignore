@@ -172,4 +172,6 @@ Sites
 .atom/.apm/
 .atom/compile-cache/
 .atom/storage/
-
+.atom/.node-gyp/
+.atom/blob-store/
+.atom/packages/
