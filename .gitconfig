@@ -1,5 +1,5 @@
 [user]
-    name = okertanov
+    name = Oleg Kertanov
     email = okertanov@gmail.com
 [github]
     user = okertanov
@@ -48,3 +48,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[pull]
+	rebase = true
