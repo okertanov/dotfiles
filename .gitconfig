@@ -11,6 +11,7 @@
     pager =
     editor = vim
 	ignorecase = false
+	excludesfile = ~/.gitignore_global
 [branch]
     autosetuprebase = always
 [push]

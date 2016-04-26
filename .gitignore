@@ -175,3 +175,6 @@ Sites
 .atom/.node-gyp/
 .atom/blob-store/
 .atom/packages/
+
+#~/bin
+bin/node_modules
