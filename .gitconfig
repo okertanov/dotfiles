@@ -10,8 +10,8 @@
     whitespace = -trailing-space,-space-before-tab
     pager =
     editor = vim
-	ignorecase = false
-	excludesfile = ~/.gitignore_global
+    ignorecase = false
+    excludesfile = ~/.gitignore_global
 [branch]
     autosetuprebase = always
 [push]
@@ -43,10 +43,14 @@
 [mergetool "bcomp"]
     cmd = bcomp "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[log]
+    date = relative
+[format]
+    pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
 [pull]
-	rebase = true
+    rebase = true
