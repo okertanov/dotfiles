@@ -31,15 +31,12 @@ export INTEL_BATCH=1
 export DEBFULLNAME="Oleg Kertanov"
 export DEBEMAIL="okertanov@gmail.com"
 
-export EC2_PRIVATE_KEY=$HOME/projects/amazon-aws/pk-UHWBOOFY3QIS4AGN5J63WYZIHTFLPYK6.pem
-export EC2_CERT=$HOME/projects/amazon-aws/cert-UHWBOOFY3QIS4AGN5J63WYZIHTFLPYK6.pem
-
 export EDITOR=vim
 
 # OSX Stuff
 export ARCHFLAGS="-arch x86_64"
 
-alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+#alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias ll='ls -Gl'
 alias Emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 alias mc='LANG=C mc'

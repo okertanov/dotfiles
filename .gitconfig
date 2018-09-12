@@ -1,6 +1,6 @@
 [user]
-    name = Oleg Kertanov
-    email = okertanov@gmail.com
+	name = Oleg Kertanov
+	email = okertanov@gmail.com
 [github]
     user = okertanov
     token = 03ad2db03dbaafb1e7ed6edab845a7fb
@@ -11,7 +11,7 @@
     pager =
     editor = vim
     ignorecase = false
-    excludesfile = ~/.gitignore_global
+	excludesfile = /Users/okertanov/.gitignore_global
 [branch]
     autosetuprebase = always
 [push]
@@ -43,11 +43,11 @@
 [mergetool "bcomp"]
     cmd = bcomp "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 [difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [log]
     date = relative
 [format]
