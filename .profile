@@ -44,3 +44,11 @@ alias mc='LANG=C mc'
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 export PATH=/usr/local/bin:$PATH
+
+
+##
+## Node dev setting: fix out of mem
+##
+
+export NODE_OPTIONS=--max_old_space_size=4096
+

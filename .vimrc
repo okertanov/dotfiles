@@ -223,7 +223,7 @@ if has("gui_running")
         set background=light
         colorscheme solarized
     elseif has('unix')
-        set guifont=Terminus\ 14
+        "set guifont=Terminus\ 14
         let g:solarized_termcolors=256
         set background=light
         colorscheme solarized
